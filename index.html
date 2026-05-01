@@ -6,66 +6,478 @@
     <title>Eric Zimmermann</title>
     <meta
       name="description"
-      content="Personal website for Eric Zimmermann."
+      content="Eric Zimmermann is a machine learning researcher working on biomedical machine learning, representation learning, and multimodal systems."
     >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="page">
-      <section class="hero" aria-labelledby="site-title">
-        <p class="eyebrow">Personal website</p>
-        <h1 id="site-title">Eric Zimmermann</h1>
-        <p class="summary">
-          Researcher and engineer building tools, models, and data systems for
-          scientific discovery.
-        </p>
-        <nav class="links" aria-label="Primary links">
-          <a href="https://github.com/EricZimmermann">GitHub</a>
-          <a href="#projects">Projects</a>
-          <a href="#resume">Resume</a>
-          <a href="#contact">Contact</a>
-        </nav>
+    <nav class="site-nav" aria-label="Site navigation">
+      <div class="container">
+        <div class="site-links">
+          <button type="button" data-section-target="about" aria-pressed="true">
+            About
+          </button>
+          <button type="button" data-section-target="research" aria-pressed="false">
+            Research
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <section id="about" class="section" data-section-panel="about">
+        <header class="page-header">
+          <h1>Eric Zimmermann</h1>
+          <p>
+            Senior Applied Scientist,
+            <a href="https://www.microsoft.com/en-us/research/theme/biomedical-ml/">
+              Biomedical ML</a>
+          </p>
+        </header>
+
+        <aside class="profile" aria-label="Profile links">
+          <div class="profile-photo" aria-hidden="true">EZ</div>
+          <p>Biomedical machine learning</p>
+          <p>Representation learning</p>
+          <p>Multimodal systems</p>
+
+          <ul class="profile-links">
+            <li>
+              <a href="mailto:eric.zimmermann@mail.mcgill.ca">
+                <svg class="icon icon-stroke" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M4.75 5.5h14.5c.69 0 1.25.56 1.25 1.25v10.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25V6.75c0-.69.56-1.25 1.25-1.25Z"/>
+                  <path d="m4 7 8 6 8-6"/>
+                </svg>
+                <span>eric.zimmermann@mail.mcgill.ca</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/EricZimmermann">
+                <svg class="icon icon-fill" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M12 .3C5.37.3 0 5.67 0 12.3c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49.99.11-.77.42-1.3.76-1.6-2.67-.31-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.99-.4 3.01-.4s2.05.13 3.01.4c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.3c0 .32.21.69.82.58A12.01 12.01 0 0 0 24 12.3C24 5.67 18.63.3 12 .3Z"/>
+                </svg>
+                <span>github.com/EricZimmermann</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://scholar.google.com/citations?user=ke-GE6kAAAAJ&amp;hl=en&amp;oi=ao">
+                <svg class="icon icon-fill" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M5.24 13.77 0 9.5 12 0l12 9.5-5.24 4.27C17.55 11.25 14.98 9.5 12 9.5s-5.55 1.75-6.76 4.27Z"/>
+                  <path d="M12 10.5a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z"/>
+                </svg>
+                <span>Google Scholar</span>
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+        <div class="about-copy">
+          <p>
+            I am a Senior Applied Scientist at
+            <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/">
+              Microsoft Research New England</a>. My work focuses on
+            machine learning methods for scientific and biomedical data, with
+            interests in biomedical machine learning, representation learning,
+            and multimodal systems.
+          </p>
+          <p>
+            Much of my recent research has focused on computational
+            histopathology and fluorescent microscopy at scale. This includes
+            work published in Nature
+            Medicine on clinical grade cancer detection.
+          </p>
+          <p>
+            Previously, I worked at Sama on data curation and dataset quality,
+            and at CAE as an electrical system designer for full-flight
+            simulators.
+          </p>
+          <p>
+            I completed my M.Sc. and B.Eng. in Electrical and Computer
+            Engineering at McGill University and
+            <a href="https://mila.quebec/en/">Mila</a>, where I worked in the
+            <a href="http://www.cim.mcgill.ca/~arbel/">
+              Probabilistic Vision Group</a> under Tal Arbel. My research
+            focused on self-supervised learning, alignment, and representation
+            geometry, with applications to brain MRI analysis for detecting and
+            predicting disease progression in multiple sclerosis.
+          </p>
+          <p>
+            I am always happy to hear from people interested in related research
+            or potential collaborations; the best way to reach me is ezimmermann
+            at microsoft dot com.
+          </p>
+          <p>
+            Outside of work, I enjoy hiking, video games, and excessive amounts
+            of coffee.
+          </p>
+        </div>
       </section>
 
-      <section id="about" class="card" aria-labelledby="about-title">
-        <h2 id="about-title">About</h2>
-        <p>
-          This is a starter GitHub Pages site. Replace this paragraph with a
-          short bio, research interests, current role, and the kind of work you
-          want visitors to notice first.
-        </p>
-      </section>
+      <section id="research" class="section" data-section-panel="research" hidden>
+        <h2>Research</h2>
 
-      <section id="projects" class="card" aria-labelledby="projects-title">
-        <h2 id="projects-title">Projects</h2>
-        <ul class="project-list">
-          <li>
-            <strong>Featured project</strong>
-            <span>Add a short description and link to a repository, paper, or demo.</span>
+        <div class="research-lede">
+          <p>
+            My research focuses on self-supervised and multimodal learning for
+            scientific and biomedical data. I am especially interested in
+            methods that learn useful representations from large, heterogeneous
+            datasets and transfer across tasks, institutions, scales, and
+            measurement modalities.
+          </p>
+          <p>
+            Much of my recent work applies these ideas in biomedical settings,
+            where labels are scarce, measurements are heterogeneous, and
+            evaluation must be robust across datasets and deployment contexts.
+            Current research interests:
+          </p>
+          <ul class="interest-list">
+            <li>
+              Applications of self-supervised learning to biomedical problems,
+              including histopathology, fluorescence microscopy, and single-cell
+              RNA sequencing.
+            </li>
+            <li>
+              Understanding the theory and geometry of representation learning.
+            </li>
+            <li>
+              Multimodal modeling and integration across heterogeneous data
+              sources.
+            </li>
+          </ul>
+        </div>
+
+        <h3>Selected work</h3>
+        <ol class="publication-list selected-publications">
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://arxiv.org/abs/2512.19605">
+                KerJEPA: Kernel Discrepancies for Euclidean Self-Supervised
+                Learning
+              </a>
+            </p>
+            <p class="publication-authors">
+              <strong>Eric Zimmermann</strong>, Harley Wiltzer, Justin Szeto,
+              David Alvarez-Melis, and Lester Mackey.
+            </p>
+            <p class="publication-venue">arXiv:2512.19605, 2025.</p>
           </li>
-          <li>
-            <strong>Recent work</strong>
-            <span>Highlight another project, collaboration, or technical area.</span>
+
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://www.nature.com/articles/s41591-024-03141-0">
+                A foundation model for clinical-grade computational pathology
+                and rare cancers detection
+              </a>
+            </p>
+            <p class="publication-authors">
+              Eugene Vorontsov, Alican Bozkurt, Adam Casson, George
+              Shaikovski, Michal Zelechowski, Kristen Severson,
+              <strong>Eric Zimmermann</strong>, James Hall, Neil Tenenholtz,
+              Nicolo Fusi, Ellen Yang, Philippe Mathieu, Alexander van Eck,
+              Donghun Lee, Julian Viret, Eric Robert, Yi Kan Wang, Jeremy D.
+              Kunz, Matthew C. H. Lee, Jan H. Bernhard, Ran A. Godrich, Gerard
+              Oakley, Ewan Millar, Matthew Hanna, Hannah Wen, Juan A. Retamero,
+              William A. Moye, Razik Yousfi, Christopher Kanan, David S.
+              Klimstra, Brandon Rothrock, Siqi Liu, and Thomas J. Fuchs.
+            </p>
+            <p class="publication-venue">
+              <em>Nature Medicine</em> 30(10), 2924-2935, 2024.
+            </p>
           </li>
-        </ul>
+
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://arxiv.org/abs/2506.13063">
+                PRISM2: Unlocking Multi-Modal General Pathology AI with
+                Clinical Dialogue
+              </a>
+            </p>
+            <p class="publication-authors">
+              Eugene Vorontsov, George Shaikovski, Adam Casson, Julian Viret,
+              <strong>Eric Zimmermann</strong>, Neil Tenenholtz, Yi Kan Wang,
+              Jan H. Bernhard, Ran A. Godrich, Juan A. Retamero, Jinru Shia,
+              Mithat Gonen, Martin R. Weiser, David S. Klimstra, Razik Yousfi,
+              Nicolo Fusi, Thomas J. Fuchs, Kristen Severson, and Siqi Liu.
+            </p>
+            <p class="publication-venue">arXiv:2506.13063, 2025.</p>
+          </li>
+
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://arxiv.org/abs/2408.00738">
+                Virchow2: Scaling Self-Supervised Mixed Magnification Models in
+                Pathology
+              </a>
+            </p>
+            <p class="publication-authors">
+              <strong>Eric Zimmermann</strong>, Eugene Vorontsov, Julian Viret,
+              Adam Casson, Michal Zelechowski, George Shaikovski, Neil
+              Tenenholtz, James Hall, David Klimstra, Razik Yousfi, Thomas
+              Fuchs, Nicolo Fusi, Siqi Liu, and Kristen Severson.
+            </p>
+            <p class="publication-venue">arXiv:2408.00738, 2024.</p>
+          </li>
+
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://arxiv.org/abs/2405.10254">
+                PRISM: A multi-modal generative foundation model for slide-level
+                histopathology
+              </a>
+            </p>
+            <p class="publication-authors">
+              George Shaikovski, Adam Casson, Kristen Severson,
+              <strong>Eric Zimmermann</strong>, Yi Kan Wang, Jeremy D. Kunz,
+              Juan A. Retamero, Gerard Oakley, David Klimstra, Christopher
+              Kanan, Matthew Hanna, Michal Zelechowski, Julian Viret, Neil
+              Tenenholtz, James Hall, Nicolo Fusi, Razik Yousfi, Peter
+              Hamilton, William A. Moye, Eugene Vorontsov, Siqi Liu, and Thomas
+              J. Fuchs.
+            </p>
+            <p class="publication-venue">arXiv:2405.10254, 2024.</p>
+          </li>
+        </ol>
+
+        <h3>Publications</h3>
+        <ol class="publication-list">
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://www.cell.com/cell/fulltext/S0092-8674%2826%2900328-4">
+                Tackling the complexity of cancer with generative models
+              </a>
+            </p>
+            <p class="publication-authors">
+              Ashley Mae Conard, Madeline Hughes, James Hall, Neil Tenenholtz,
+              <strong>Eric Zimmermann</strong>, Lorin Crawford, Ava P. Amini,
+              and Kristen Severson.
+            </p>
+            <p class="publication-venue">
+              <em>Cell</em> 189(8), 2218-2231, 2026.
+            </p>
+          </li>
+
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://arxiv.org/abs/2603.00193">
+                Multimodal Alignment Improves Generalizability of Genomic
+                Biomarker Prediction in Computational Pathology
+              </a>
+            </p>
+            <p class="publication-authors">
+              Ekaterina Redekop, <strong>Eric Zimmermann</strong>, Ava P.
+              Amini, Alex X. Lu, Neil Tenenholtz, James Brian Hall, Lorin
+              Crawford, and Kristen A. Severson.
+            </p>
+            <p class="publication-venue">arXiv:2603.00193, 2026.</p>
+          </li>
+
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://arxiv.org/abs/2602.22176">
+                Mixed Magnification Aggregation for Generalizable Region-Level
+                Representations in Computational Pathology
+              </a>
+            </p>
+            <p class="publication-authors">
+              <strong>Eric Zimmermann</strong>, Julian Viret, Michal
+              Zelechowski, James Brian Hall, Neil Tenenholtz, Adam Casson,
+              George Shaikovski, Eugene Vorontsov, Siqi Liu, and Kristen A.
+              Severson.
+            </p>
+            <p class="publication-venue">arXiv:2602.22176, 2026.</p>
+          </li>
+
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://doi.org/10.64898/2026.02.23.707420">
+                Beyond alignment: synergistic integration is required for
+                multimodal cell foundation models
+              </a>
+            </p>
+            <p class="publication-authors">
+              T. Richter, <strong>E. Zimmermann</strong>, J. Hall, F. J.
+              Theis, S. Raghavan, P. S. Winter, A. P. Amini, and L. Crawford.
+            </p>
+            <p class="publication-venue">bioRxiv, 2026.02.23.707420, 2026.</p>
+          </li>
+
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://arxiv.org/abs/2512.19605">
+                KerJEPA: Kernel Discrepancies for Euclidean Self-Supervised
+                Learning
+              </a>
+            </p>
+            <p class="publication-authors">
+              <strong>Eric Zimmermann</strong>, Harley Wiltzer, Justin Szeto,
+              David Alvarez-Melis, and Lester Mackey.
+            </p>
+            <p class="publication-venue">arXiv:2512.19605, 2025.</p>
+          </li>
+
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://arxiv.org/abs/2506.13063">
+                PRISM2: Unlocking Multi-Modal General Pathology AI with
+                Clinical Dialogue
+              </a>
+            </p>
+            <p class="publication-authors">
+              Eugene Vorontsov, George Shaikovski, Adam Casson, Julian Viret,
+              <strong>Eric Zimmermann</strong>, Neil Tenenholtz, Yi Kan Wang,
+              Jan H. Bernhard, Ran A. Godrich, Juan A. Retamero, Jinru Shia,
+              Mithat Gonen, Martin R. Weiser, David S. Klimstra, Razik Yousfi,
+              Nicolo Fusi, Thomas J. Fuchs, Kristen Severson, and Siqi Liu.
+            </p>
+            <p class="publication-venue">arXiv:2506.13063, 2025.</p>
+          </li>
+
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://arxiv.org/abs/2408.00738">
+                Virchow2: Scaling Self-Supervised Mixed Magnification Models in
+                Pathology
+              </a>
+            </p>
+            <p class="publication-authors">
+              <strong>Eric Zimmermann</strong>, Eugene Vorontsov, Julian Viret,
+              Adam Casson, Michal Zelechowski, George Shaikovski, Neil
+              Tenenholtz, James Hall, David Klimstra, Razik Yousfi, Thomas
+              Fuchs, Nicolo Fusi, Siqi Liu, and Kristen Severson.
+            </p>
+            <p class="publication-venue">arXiv:2408.00738, 2024.</p>
+          </li>
+
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://arxiv.org/abs/2405.10254">
+                PRISM: A multi-modal generative foundation model for slide-level
+                histopathology
+              </a>
+            </p>
+            <p class="publication-authors">
+              George Shaikovski, Adam Casson, Kristen Severson,
+              <strong>Eric Zimmermann</strong>, Yi Kan Wang, Jeremy D. Kunz,
+              Juan A. Retamero, Gerard Oakley, David Klimstra, Christopher
+              Kanan, Matthew Hanna, Michal Zelechowski, Julian Viret, Neil
+              Tenenholtz, James Hall, Nicolo Fusi, Razik Yousfi, Peter
+              Hamilton, William A. Moye, Eugene Vorontsov, Siqi Liu, and Thomas
+              J. Fuchs.
+            </p>
+            <p class="publication-venue">arXiv:2405.10254, 2024.</p>
+          </li>
+
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://arxiv.org/abs/2405.01688">
+                Adapting self-supervised learning for computational pathology
+              </a>
+            </p>
+            <p class="publication-authors">
+              <strong>Eric Zimmermann</strong>, Neil Tenenholtz, James Hall,
+              George Shaikovski, Michal Zelechowski, Adam Casson, Fausto
+              Milletari, Julian Viret, Eugene Vorontsov, Siqi Liu, and Kristen
+              Severson.
+            </p>
+            <p class="publication-venue">
+              DCA in MI Workshop, CVPR 2024; arXiv:2405.01688, 2024.
+            </p>
+          </li>
+
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://www.nature.com/articles/s41591-024-03141-0">
+                A foundation model for clinical-grade computational pathology
+                and rare cancers detection
+              </a>
+            </p>
+            <p class="publication-authors">
+              Eugene Vorontsov, Alican Bozkurt, Adam Casson, George
+              Shaikovski, Michal Zelechowski, Kristen Severson,
+              <strong>Eric Zimmermann</strong>, James Hall, Neil Tenenholtz,
+              Nicolo Fusi, Ellen Yang, Philippe Mathieu, Alexander van Eck,
+              Donghun Lee, Julian Viret, Eric Robert, Yi Kan Wang, Jeremy D.
+              Kunz, Matthew C. H. Lee, Jan H. Bernhard, Ran A. Godrich, Gerard
+              Oakley, Ewan Millar, Matthew Hanna, Hannah Wen, Juan A. Retamero,
+              William A. Moye, Razik Yousfi, Christopher Kanan, David S.
+              Klimstra, Brandon Rothrock, Siqi Liu, and Thomas J. Fuchs.
+            </p>
+            <p class="publication-venue">
+              <em>Nature Medicine</em> 30(10), 2924-2935, 2024.
+            </p>
+          </li>
+
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://arxiv.org/abs/2311.02709">
+                Benchmarking a benchmark: How reliable is MS-COCO?
+              </a>
+            </p>
+            <p class="publication-authors">
+              <strong>Eric Zimmermann</strong>, Justin Szeto, Jerome Pasquero,
+              and Frederic Ratle.
+            </p>
+            <p class="publication-venue">
+              DataComp Workshop, ICCV 2023; arXiv:2311.02709, 2023.
+            </p>
+          </li>
+
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://arxiv.org/abs/2311.02707">
+                An empirical study of uncertainty in polygon annotation and the
+                impact of quality assurance
+              </a>
+            </p>
+            <p class="publication-authors">
+              <strong>Eric Zimmermann</strong>, Justin Szeto, and Frederic
+              Ratle.
+            </p>
+            <p class="publication-venue">
+              DataComp Workshop, ICCV 2023; arXiv:2311.02707, 2023.
+            </p>
+          </li>
+
+          <li class="publication">
+            <p class="publication-title">
+              <a href="https://hal.inria.fr/hal-03358968v2">
+                Consensus learning with multi-rater labels for segmenting and
+                detecting new lesions
+              </a>
+            </p>
+            <p class="publication-authors">
+              Brennan Nichyporuk, Kirill Vasilevski, Anjun Hu, Chelsea
+              Myers-Colet, Jillian Cardinell, Justin Szeto, Jean-Pierre Falet,
+              <strong>Eric Zimmermann</strong>, Julien Schroeter, Douglas L.
+              Arnold, and Tal Arbel.
+            </p>
+            <p class="publication-venue">
+              <em>MSSEG-2 challenge proceedings: Multiple sclerosis new lesions
+              segmentation challenge using a data management and processing
+              infrastructure</em>, 2021.
+            </p>
+          </li>
+        </ol>
       </section>
 
-      <section id="resume" class="card" aria-labelledby="resume-title">
-        <h2 id="resume-title">Resume</h2>
-        <p>
-          Add a PDF resume to this repository later and link it here, or replace
-          this section with selected education, experience, and publications.
-        </p>
-      </section>
-
-      <section id="contact" class="card" aria-labelledby="contact-title">
-        <h2 id="contact-title">Contact</h2>
-        <p>
-          The best starting point is
-          <a href="https://github.com/EricZimmermann">GitHub</a>. Add other
-          public contact links when you are ready.
-        </p>
-      </section>
     </main>
+
+    <script>
+      const sectionButtons = document.querySelectorAll("[data-section-target]");
+      const sectionPanels = document.querySelectorAll("[data-section-panel]");
+
+      function setSection(section) {
+        sectionButtons.forEach((button) => {
+          button.setAttribute("aria-pressed", String(button.dataset.sectionTarget === section));
+        });
+        sectionPanels.forEach((panel) => {
+          panel.hidden = panel.dataset.sectionPanel !== section;
+        });
+      }
+
+      sectionButtons.forEach((button) => {
+        button.addEventListener("click", () => setSection(button.dataset.sectionTarget));
+      });
+    </script>
   </body>
 </html>
